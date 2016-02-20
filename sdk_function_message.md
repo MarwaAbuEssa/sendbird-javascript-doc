@@ -369,9 +369,45 @@ It notifies a typing-end event to users in the channel.
   ...
 ```
 
-### 9. Check Group Messaging Channel
-Check if the type of the messaging channel is group messaging channel.
-Return a boolean.
+### 9. Check 1-on-1 or Group Messaging Channel  
+Check if the type of the messaging channel is 1-on-1 or group messaging channel.
+Return a boolean.  
+
+#### 9-1. Check 1-on-1 Messaging Channel  
+
+```javascript
+  ...
+  sendbird.getMessagingChannelList({
+    "successFunc": function(data) {
+      ...
+      var isMessaging = sendbird.isMessagingChannel(channel["channel_type"])
+      console.log(isMessaging);
+      ...
+    },
+    ...
+  });
+  ...
+```    
+  
+#### 9-2. Check Group Messaging Channel  
+
+```javascript
+  ...
+  sendbird.getMessagingChannelList({
+    "successFunc": function(data) {
+      ...
+      var isGroup = sendbird.isGroupMessagingChannel(channel["channel_type"])
+      console.log(isGroup);
+      ...
+    },
+    ...
+  });
+  ...
+```    
+  
+#### 9-3. Check Group Messaging Channel: Deprecated  
+This function will be removed.  
+Recommend to use `isGroupMessagingChannel()`. 
 
 ```javascript
   ...
@@ -385,7 +421,8 @@ Return a boolean.
     ...
   });
   ...
-```
+```    
+
 
 ### 10. Get User List
 Get a full list of registered users in your app who an user can invite
@@ -407,7 +444,7 @@ Get a full list of registered users in your app who an user can invite
     }
   });
   ...
-```
+```  
   * **token**: If you don't pass a token, we generate new snapshot of users and return new token in a response. As long as you pass the token, you will explore the same snapshot. If you want to get an updated snapshot, then call this method again without the token. Then you will get new token.     `default: ''`  
   * **page**: Page number. `default: 1`   
   * **limit**: Number of users to be displayed per page. `default: 30`  

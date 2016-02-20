@@ -373,9 +373,13 @@ Get current channel info.
     channel_url: string,
     cover_img_url: string,
     member_count: int,
-    name: string
+    name: string,
+    isMessaging: boolean
   }
-```
+```  
+
+  * **isMessaging**: If this value is true, current channel is 1-on-1 or group messaging channel.  
+  
 
 ### 14. Get User Info  
 Get current user info.    
