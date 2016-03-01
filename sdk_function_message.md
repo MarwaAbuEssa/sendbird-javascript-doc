@@ -359,21 +359,12 @@ It notifies a typing-start event to users in the channel.
   ...
 ```
 
-### 8. Typing End
-Call this function when an user ends typing.  
-It notifies a typing-end event to users in the channel. 
 
-```javascript
-  ...
-  sendbird.typeEnd();
-  ...
-```
-
-### 9. Check 1-on-1 or Group Messaging Channel  
+### 8. Check 1-on-1 or Group Messaging Channel  
 Check if the type of the messaging channel is 1-on-1 or group messaging channel.
 Return a boolean.  
 
-#### 9-1. Check 1-on-1 Messaging Channel  
+#### 8-1. Check 1-on-1 Messaging Channel  
 
 ```javascript
   ...
@@ -389,7 +380,7 @@ Return a boolean.
   ...
 ```    
   
-#### 9-2. Check Group Messaging Channel  
+#### 8-2. Check Group Messaging Channel  
 
 ```javascript
   ...
@@ -405,7 +396,7 @@ Return a boolean.
   ...
 ```    
   
-#### 9-3. Check Group Messaging Channel: Deprecated  
+#### 8-3. Check Group Messaging Channel: Deprecated  
 This function will be removed.  
 Recommend to use `isGroupMessagingChannel()`. 
 
@@ -424,7 +415,7 @@ Recommend to use `isGroupMessagingChannel()`.
 ```    
 
 
-### 10. Get User List
+### 9. Get User List
 Get a full list of registered users in your app who an user can invite
 
 
