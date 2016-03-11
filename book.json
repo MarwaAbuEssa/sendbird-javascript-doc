@@ -5,7 +5,10 @@
     "plugins": ["ga"],
     "pluginsConfig": {
         "ga": {
-            "token": "UA-39104662-19"
+            "token": "UA-39104662-19",
+            "configuration": {
+                "allowLinker": true
+            }
         }
     }
 }
