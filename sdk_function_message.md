@@ -62,7 +62,7 @@ Start 1-on-1 messaging.
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
-    "last_message_ts": long,     // last message timestamp in channel
+    "last_message_ts": int,      // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
@@ -148,7 +148,7 @@ Invite a certain user to a messaging channel.
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
-    "last_message_ts": long,     // last message timestamp in channel
+    "last_message_ts": int,      // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
@@ -207,7 +207,7 @@ The user is removed from the channel's member list and the channel no longer sho
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
-    "last_message_ts": long,     // last message timestamp in channel
+    "last_message_ts": int,      // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
@@ -269,7 +269,7 @@ Get a list of 1-on-1/group messaging channels.
           "name": string             // channel topic
         },
         "last_message": string,      // last message in channel
-        "last_message_ts": long,     // last message timestamp in channel
+        "last_message_ts": int,      // last message timestamp in channel
         "members": [
           0: {
             "guest_id": string,      // user unique id
@@ -345,7 +345,7 @@ Join a 1-on-1 messaging channel or a group messaging channel an user left in the
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
-    "last_message_ts": long,     // last message timestamp in channel
+    "last_message_ts": int,      // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
