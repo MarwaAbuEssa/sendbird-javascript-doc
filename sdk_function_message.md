@@ -62,6 +62,7 @@ Start 1-on-1 messaging.
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
+    "last_message_ts": long,     // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
@@ -88,12 +89,14 @@ Start 1-on-1 messaging.
 ### 2. Invite Users
 Invite a certain user to a messaging channel.
 
+#### 2-1. When joined messaging channel 
+
 ``` javascript
   ...
   sendbird.inviteMessaging(
     guestIds,
     {
-      "successFunc" : function(data) {
+      "successFunc": function(data) {
         console.log(data);
         // do something
       },
@@ -106,9 +109,34 @@ Invite a certain user to a messaging channel.
   ...
 ```
 
+#### 2-2. When not joined messaging channel
+
+``` javascript
+  ...
+  sendbird.inviteMessaging(
+    guestIds,
+    {
+      "channel_url": string,
+      "successFunc": function(data) {
+        console.log(data);
+        // do something
+      },
+      "errorFunc": function(status, error) {
+        console.log(status, error);
+        // do something
+      }
+    }
+  );
+  ...
+```
+
+
  * **guestIds**: `Guest ID` of the users tobe invited for 1-on-1 messaging.  
  If it's more than just one user, send it as array format. If it's not, you can send it as either array format or string format.  
    - `e.g.) "76f01c7a-52bc-4c2b-b3c6-09f2649aa11e" or or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e"] or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e", "36277788-ca5f-4685-b3a5-8f6cf739d078"]`  
+ * **channel_url**: `channel_url` of the channel to be invited.  
+ If it's value is empty, to set channel url of current joined channel.   
+   - `e.g.) sendbird_messaging_520693_be67a4b22c7739c5f0bc44aa8746fca1e6a10596`   
 
 #### Response
 
@@ -120,6 +148,7 @@ Invite a certain user to a messaging channel.
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
+    "last_message_ts": long,     // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
@@ -178,6 +207,7 @@ The user is removed from the channel's member list and the channel no longer sho
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
+    "last_message_ts": long,     // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
@@ -239,6 +269,7 @@ Get a list of 1-on-1/group messaging channels.
           "name": string             // channel topic
         },
         "last_message": string,      // last message in channel
+        "last_message_ts": long,     // last message timestamp in channel
         "members": [
           0: {
             "guest_id": string,      // user unique id
@@ -314,6 +345,7 @@ Join a 1-on-1 messaging channel or a group messaging channel an user left in the
       "name": string             // channel topic
     },
     "last_message": string,      // last message in channel
+    "last_message_ts": long,     // last message timestamp in channel
     "members": [
       0: {
         "guest_id": string,      // user unique id
