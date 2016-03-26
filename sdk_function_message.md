@@ -6,13 +6,13 @@ Function references to implement private messaging features.
 It is suitable for private messaging between users.  
 It also offers additional features such as read receipts and typing indicators.
 
-* Note: A user can remove itself from a channel. But the channel appears on the list of channels again when the other person sends new message to the user.
+* Note: A user can remove itself from a channel. But the channel appears on the list of channels again when the other person sends new messages to the user.
  
 
 ### Group Messaging 
 It is suitable for private group communications.  
 Only users who have been added/invited to the channel can see  messages and the list of members in the channel.  
-When an user leaves or is removed from the channel, the channel disappears from the list.  
+When a user leaves or is removed from the channel, the channel disappears from the list.  
 
 ### Download and Install 
 All of the functions are included in `SendBird JavaScript SDK`. No additional files or installations are required.
@@ -50,7 +50,7 @@ Start 1-on-1 messaging.
 ```
 
  * **guestIds**: `Guest ID` of the users to be invited for 1-on-1 and group messaging. It can handle both a string format and an array (if you want to start with multiple users)
-   - `e.g.) "76f01c7a-52bc-4c2b-b3c6-09f2649aa11e" or or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e"] or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e", "36277788-ca5f-4685-b3a5-8f6cf739d078"]`   
+   - `e.g.) "76f01c7a-52bc-4c2b-b3c6-09f2649aa11e" or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e"] or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e", "36277788-ca5f-4685-b3a5-8f6cf739d078"]`   
 
 #### Response
 
@@ -131,7 +131,7 @@ Invite a certain user to a messaging channel.
 ```
 
 
- * **guestIds**: `Guest ID` of the users tobe invited for 1-on-1 messaging.  
+ * **guestIds**: `Guest ID` of the users to be invited for 1-on-1 messaging.  
  If it's more than just one user, send it as array format. If it's not, you can send it as either array format or string format.  
    - `e.g.) "76f01c7a-52bc-4c2b-b3c6-09f2649aa11e" or or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e"] or ["76f01c7a-52bc-4c2b-b3c6-09f2649aa11e", "36277788-ca5f-4685-b3a5-8f6cf739d078"]`  
  * **channel_url**: `channel_url` of the channel to be invited.  
@@ -370,7 +370,7 @@ Join a 1-on-1 messaging channel or a group messaging channel that a user left in
 
 
 ### 6. Messaging read status change to read
-When there are unread messages, this function makes message state to be readed.    
+When there are unread messages, this function marks a message's state to read.    
 ```javascript
   ...
   sendbird.markAsRead(url);
@@ -383,7 +383,7 @@ When there are unread messages, this function makes message state to be readed.
 
 ### 7. Typing Start
 Call this function when a user starts typing.  
-It notifies a typing-start event to users in the channel. 
+It sends a typing-start event to users in the channel. 
 
 ```javascript
   ...
@@ -459,7 +459,7 @@ Recommend to use `isGroupMessagingChannel()`.
 
 
 ### 10. Get User List
-Get a full list of registered users in your app who an user can invite
+Get a full list of registered users in your app whom a user can invite to chat.
 
 
 ```javascript
@@ -479,7 +479,7 @@ Get a full list of registered users in your app who an user can invite
   });
   ...
 ```  
-  * **token**: If you don't pass a token, we generate new snapshot of users and return new token in a response. As long as you pass the token, you will explore the same snapshot. If you want to get an updated snapshot, then call this method again without the token. Then you will get new token.     `default: ''`  
+  * **token**: If you don't pass a token, a new snapshot of users is generated and a new token is returned in a response. As long as you pass the token, you will explore the same snapshot. If you want to get an updated snapshot, then call this method again without the token. Then you will get new token.     `default: ''`  
   * **page**: Page number. `default: 1`   
   * **limit**: Number of users to be displayed per page. `default: 30`  
 
