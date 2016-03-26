@@ -6,7 +6,7 @@ Function references to implement private messaging features.
 It is suitable for private messaging between users.  
 It also offers additional features such as read receipts and typing indicators.
 
-* Note: An user can remove itself from a channel. But the channel appears on the list of channels again when the other person sends new message to the user.
+* Note: A user can remove itself from a channel. But the channel appears on the list of channels again when the other person sends new message to the user.
  
 
 ### Group Messaging 
@@ -302,7 +302,7 @@ Get a list of 1-on-1/group messaging channels.
 
 
 ### 5. Join Messaging Channel
-Join a 1-on-1 messaging channel or a group messaging channel an user left in the past.
+Join a 1-on-1 messaging channel or a group messaging channel that a user left in the past.
 
 ```javascript
   ...
@@ -382,7 +382,7 @@ When there are unread messages, this function makes message state to be readed.
 
 
 ### 7. Typing Start
-Call this function when an user starts typing.  
+Call this function when a user starts typing.  
 It notifies a typing-start event to users in the channel. 
 
 ```javascript
@@ -393,7 +393,7 @@ It notifies a typing-start event to users in the channel.
 
 
 ### 8. Typing End  
-Call this function when an user ends typing.  
+Call this function when a user ends typing.  
 It notifies a typing-end event to users in the channel.  
   
 ```javascript  
