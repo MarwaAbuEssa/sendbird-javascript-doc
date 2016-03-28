@@ -42,13 +42,9 @@ $ cd basic-react-native-sample/SendBirdReactNativeSample
 $ npm install
 $ npm install -g react-native-cli
 ```
-4. Run the sample app in iOS or Android 
-
+4. Run the sample app in iOS Simulator
 ``` bash
 $ react-native run-ios
-```
-``` bash
-$ react-native run-android
 ```
 
 
