@@ -4,21 +4,21 @@ Quick Start
 This document provides a guide for running a sample `SendBird` project.  
 Through this project, you will be able to connect to a lobby channel, view the list of channels, and send messages to the channel.
 
-## Starting the Project
-You will need a local server to run the sample project. In this example, we'll be using `Python` to run our local server.
+## Starting Web Sample Project
+You will need a local server to run the sample project. In this example, we'll be using `Python` to run our local server. 
 
-1. Download and install Python
+1. Download and install Python if you don't have it.
   - [Download and install Python from the python website](https://www.python.org/downloads/)
 2. Clone the project
 ``` bash
-$ git clone https://github.com/smilefam/sendbird-sample.git
+$ git clone https://github.com/smilefam/SendBird-JavaScript
 ```
-3. Open the web project from HTML developer tools
-4. Open terminal and run SimpleHTTPServer in project path
+3. Open terminal and run SimpleHTTPServer in project path.
 ``` python
+$ cd basic-sample
 $ python -m SimpleHTTPServer 8000
 ```
-5. Try to connect http://localhost:8000 in a web browser to see the example project
+5. Try to connect to http://localhost:8000 in a web browser to see the sample project.
 
 
 
