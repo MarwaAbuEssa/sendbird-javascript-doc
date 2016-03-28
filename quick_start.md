@@ -20,8 +20,6 @@ $ python -m SimpleHTTPServer 8000
 4. Try to connect to http://localhost:8000 in a web browser to see the sample project.
 
 
-By running the sample project, you can experience Open Chat or 1-on-1 Messaging.
-
 - Sample project comes with a `** SendBird Sample App ID **`
 - To use in a production environment ** you need to change this to your `SendBird APP ID` found on your dashboard. **
 
