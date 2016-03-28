@@ -18,17 +18,14 @@ $ git clone https://github.com/smilefam/SendBird-JavaScript
 $ cd basic-sample
 $ python -m SimpleHTTPServer 8000
 ```
-5. Try to connect to http://localhost:8000 in a web browser to see the sample project.
+4. Try to connect to http://localhost:8000 in a web browser to see the sample project.
 
 
-
-## Running SendBird
 By running the sample project, you can experience Open Chat or 1-on-1 Messaging.
 
 - Sample project comes with a `** SendBird Sample App ID **`
 - To use in a production environment ** you need to change this to your `SendBird APP ID` found on your dashboard. **
 
-----
 - You can check out the following features when the sample project is running:
   1. **Open Chat List**: Connect to the sample channel, then send and receive messages.
   2. **Start Messaging**: See the list of members who've connnected to the lobby channel and start a 1-on-1 or a group messaging.
