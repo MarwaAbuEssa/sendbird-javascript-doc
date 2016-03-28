@@ -4,7 +4,7 @@ Quick Start
 This document provides a guide for running a sample `SendBird` project.  
 Through this project, you will be able to connect to a lobby channel, view the list of channels, and send messages to the channel.
 
-## Running Web Sample Project
+## Running Web Sample 
 You will need a local server to run the sample project. In this example, we'll be using `Python` to run our local server. 
 
 1. Download and install Python if you don't have it.
@@ -25,7 +25,7 @@ $ python -m SimpleHTTPServer 8000
   3. **Messaging List**: See or edit my list of channels.
 
 
-## Running React Native Sample Project
+## Running React Native Sample 
 
 1. Download and install `node` and `npm`.
 2. Clone the project
