@@ -8,7 +8,6 @@ Through this project, you will be able to connect to a lobby channel, view the l
 You will need a local server to run the sample project. In this example, we'll be using `Python` to run our local server. 
 
 1. Download and install Python if you don't have it.
-  - [Download and install Python from the python website](https://www.python.org/downloads/)
 2. Clone the project
 ``` bash
 $ git clone https://github.com/smilefam/SendBird-JavaScript
@@ -30,3 +29,29 @@ By running the sample project, you can experience Open Chat or 1-on-1 Messaging.
   1. **Open Chat List**: Connect to the sample channel, then send and receive messages.
   2. **Start Messaging**: See the list of members who've connnected to the lobby channel and start a 1-on-1 or a group messaging.
   3. **Messaging List**: See or edit my list of channels.
+
+
+## Running React Native Sample Project
+
+1. Download and install `node` and `npm`.
+2. Clone the project
+``` bash
+$ git clone https://github.com/smilefam/SendBird-JavaScript
+```
+3. Open terminal and run the following commands in the project path.
+``` bash
+$ cd basic-react-native-sample/SendBirdReactNativeSample
+$ npm install
+$ npm install -g react-native-cli
+```
+4. Run the sample app in iOS or Android 
+
+``` bash
+$ react-native run-ios
+```
+``` bash
+$ react-native run-android
+```
+
+
+
