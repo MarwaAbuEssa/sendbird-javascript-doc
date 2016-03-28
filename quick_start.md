@@ -19,13 +19,9 @@ $ python -m SimpleHTTPServer 8000
 ```
 4. Try to connect to http://localhost:8000 in a web browser to see the sample project.
 
-
-- Sample project comes with a `** SendBird Sample App ID **`
-- To use in a production environment ** you need to change this to your `SendBird APP ID` found on your dashboard. **
-
 - You can check out the following features when the sample project is running:
   1. **Open Chat List**: Connect to the sample channel, then send and receive messages.
-  2. **Start Messaging**: See the list of members who've connnected to the lobby channel and start a 1-on-1 or a group messaging.
+  2. **Start Messaging**: See the list of members who've connected to the lobby channel and start a 1-on-1 or a group messaging.
   3. **Messaging List**: See or edit my list of channels.
 
 
@@ -46,6 +42,7 @@ $ npm install -g react-native-cli
 ``` bash
 $ react-native run-ios
 ```
+
 
 
 
