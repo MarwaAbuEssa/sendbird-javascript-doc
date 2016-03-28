@@ -19,12 +19,6 @@ $ python -m SimpleHTTPServer 8000
 ```
 4. Try to connect to http://localhost:8000 in a web browser to see the sample project.
 
-- You can check out the following features when the sample project is running:
-  1. **Open Chat List**: Connect to the sample channel, then send and receive messages.
-  2. **Start Messaging**: See the list of members who've connected to the lobby channel and start a 1-on-1 or a group messaging.
-  3. **Messaging List**: See or edit my list of channels.
-
-
 ## Running React Native Sample 
 
 1. Download and install `node` and `npm`.
@@ -42,6 +36,15 @@ $ npm install -g react-native-cli
 ``` bash
 $ react-native run-ios
 ```
+
+You can check out the following features when the above sample projects are running:
+  1. **Open Chat List**: Connect to the sample channel, then send and receive messages.
+  2. **Start Messaging**: See the list of members who've connected to the lobby channel and start a 1-on-1 or a group messaging.
+  3. **Messaging List**: See or edit my list of channels.
+
+
+
+
 
 
 
