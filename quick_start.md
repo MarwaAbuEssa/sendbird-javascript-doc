@@ -4,7 +4,7 @@ Quick Start
 This document provides a guide for running a sample `SendBird` project.  
 Through this project, you will be able to connect to a lobby channel, view the list of channels, and send messages to the channel.
 
-## Starting Web Sample Project
+## Running Web Sample Project
 You will need a local server to run the sample project. In this example, we'll be using `Python` to run our local server. 
 
 1. Download and install Python if you don't have it.
