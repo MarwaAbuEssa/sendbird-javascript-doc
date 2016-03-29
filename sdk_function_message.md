@@ -115,8 +115,8 @@ Invite a certain user to a messaging channel.
   ...
   sendbird.inviteMessaging(
     guestIds,
+    channel_url,
     {
-      "channel_url": string,
       "successFunc": function(data) {
         console.log(data);
         // do something
