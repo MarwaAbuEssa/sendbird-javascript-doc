@@ -420,3 +420,22 @@ Check current SDK version.
 ```javascript  
   [version] x.x.x;
 ```
+
+
+### 15. Register Token
+Register GCM token and APNS token.
+
+```javascript
+  ...
+  sendbird.registerGCMToken(token);
+  ...
+```
+
+```javascript
+  ...
+  sendbird.registerAPNSToken(token);
+  ...
+```
+
+  * **token**: `token` is device token.  
+
