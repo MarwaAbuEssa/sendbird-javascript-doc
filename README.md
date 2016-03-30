@@ -1,19 +1,51 @@
-Introduction
-=============
-### Welcome to SendBird JavaScript SDK Documentation!
+Quick Start
+===========
 
-Here, you will learn how to use SendBird's `JavaScript SDK` for building chat feature for your web application.
+This document provides a guide for running a sample `SendBird` project.  
+Through this project, you will be able to connect to a lobby channel, view the list of channels, and send messages to the channel.
 
-To use `SendBird` on your web application, you first need to download and include `SendBird JavaScript SDK`.
+## Running Web Sample 
+You will need a local server to run the sample project. In this example, we'll be using `Python` to run our local server. 
 
-Here is the quick guide to the sections in our JavaScript SDK documentation:
+1. Download and install Python if you don't have it.
+2. Clone the project
+``` bash
+$ git clone https://github.com/smilefam/SendBird-JavaScript
+```
+3. Open terminal and run SimpleHTTPServer in project path.
+``` python
+$ cd basic-sample
+$ python -m SimpleHTTPServer 8000
+```
+4. Try to connect to http://localhost:8000 in a web browser to see the sample project.
 
-1. **Quick Start:** Start here to test out the SDK with a sample project
-2. **Installation and Setup:** Download JavaScript SDK/Sample Project and setup your environment
-3. **JavaScript SDK Functions - Common:** References to the common functions used for building chat feature
-4. **JavaScript SDK Functions - Open Chat:** References to the functions used for building public chat rooms using Open Chat Channels
-5. **JavaScript SDK Functions - Messaging:** References to the functions used for building private messaging (1on1 and group) using Messaging Channels
+## Running React Native Sample 
 
-Please browse the left menu for more information.
+1. Download and install `node` and `npm`.
+2. Clone the project
+``` bash
+$ git clone https://github.com/smilefam/SendBird-JavaScript
+```
+3. Open terminal and run the following commands in the project path.
+``` bash
+$ cd basic-react-native-sample/SendBirdReactNativeSample
+$ npm install
+$ npm install -g react-native-cli
+```
+4. Run the sample app in iOS Simulator
+``` bash
+$ react-native run-ios
+```
 
-Enjoy building your amazing app! :)
+You can check out the following features when the above sample projects are running:
+  1. **Open Chat List**: Connect to the sample channel, then send and receive messages.
+  2. **Start Messaging**: See the list of members who've connected to the lobby channel and start a 1-on-1 or a group messaging.
+  3. **Messaging List**: See or edit my list of channels.
+
+
+
+
+
+
+
+
