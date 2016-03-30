@@ -6,5 +6,5 @@
 * [SDK Functions - Open Chat](sdk_function_openchat.md)
 * [SDK Functions - Messaging](sdk_function_message.md)
 * [FAQ](http:/help.sendbird.com)
-* Channel Type
+* [Channel Type](channel_type.md)
 
