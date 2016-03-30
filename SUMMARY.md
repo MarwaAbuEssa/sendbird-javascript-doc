@@ -1,7 +1,7 @@
 # Summary
 
 * [Quick Start](README.md)
-* Authentication
+* [Authentication](authentication.md)
 * [Channel Type](channel_type.md)
 * [Installation and Setup](download_sdk.md)
 * [SDK Functions - Common](sdk_function_common.md)
