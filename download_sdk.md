@@ -14,10 +14,6 @@ or
    npm install sendbird
 ```
 
-### (Optional) Download the Sample App
-<a class="sendbird-btn sendbird-btn--green" href="https://github.com/smilefam/sendbird-sample/tree/master/SendBirdWebSample" target="_blank">Sample app - Click here to see repository</a>
-
-
 ### Browser Compatibility
 We recommend the lastest version of Chrome/Safari/Firefox/IE 10+ ( If you use older IE, please upgrade it to IE10.)
 
