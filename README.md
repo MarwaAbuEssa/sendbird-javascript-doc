@@ -43,8 +43,30 @@ You can check out the following features when the above sample projects are runn
   3. **Messaging List**: See or edit my list of channels.
 
 
+## Integrating SendBird with an existing app
+
+### Download the Latest SendBird JavaScript SDK
+<a class="sendbird-btn sendbird-btn--green" href="https://github.com/smilefam/SendBird-SDK-JavaScript" target="_blank">Latest SendBird JavaScript SDK - Click here to download</a>  
+or  
+```unix
+   bower install sendbird
+```
+or  
+```unix
+   npm install sendbird
+```
+
+### Add the SDK File to Your Project
+After downloading the `SendBird JavaScript SDK` JavaScript file, add it to your Project Classpath (`generally the libs directory`). 
+
+Then include the JaveScript file on your page:
+```javascript
+<script src="lib/SendBird.min.js"></script>
+```
 
 
+## Browser Compatibility
+We recommend the lastest version of Chrome/Safari/Firefox/IE 10+ ( If you use older IE, please upgrade it to IE10.)
 
 
 
