@@ -10,7 +10,7 @@ UserId could be any unique string id such as email, uid in your database.
 
 This simple authentication is useful when you are in development or your service doesn't need additional security.
 
-``` javascript
+```javascript
 sendbird.init({
     "app_id": appId,
     "guest_id": guestId,
@@ -36,7 +36,6 @@ With SendBird [Server API](https://sendbird.gitbooks.io/sendbird-server-api/cont
 * Issue a new access token via Server API and update it in your persistent store periodically.
 
 ```javascript
-``` javascript
 sendbird.init({
     "app_id": appId,
     "guest_id": guestId,
@@ -50,6 +49,4 @@ sendbird.init({
       console.log(status, error);
     }
   });
-```
-
 ```
