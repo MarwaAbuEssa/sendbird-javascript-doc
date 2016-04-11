@@ -13,11 +13,11 @@ After Wed SDK 2.1 version, all of connect/join functions are asynchronous now.
 
 For Open Chat, please check out this link.
 
-[Join Open Chat Channel](https://sendbird.gitbooks.io/sendbird-web-sdk/content/sdk_function_openchat.html) 
+[Join Open Chat Channel](https://sendbird.gitbooks.io/sendbird-javascript-sdk/content/sdk_function_openchat.html) 
 
 For 1 on 1 or Group Messaging, please check out this link.
 
-[Start 1-on-1 Messaging or Join Messaging Channel](https://sendbird.gitbooks.io/sendbird-web-sdk/content/sdk_function_message.html)
+[Start 1-on-1 Messaging or Join Messaging Channel](https://sendbird.gitbooks.io/sendbird-javascript-sdk/content/sdk_function_message.html)
 
 
 ### 2. Disconnect Messaging Connection
