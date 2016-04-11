@@ -48,6 +48,11 @@ sendbird.events.onMessageDelivery = function(obj) {
   // do something...
 };
 
+sendbird.events.onBanReceived = function(obj) {
+  console.log(obj);
+  // do something...
+};
+
 ```
 
  * **onMessageReceived**: The function is called when a generic message has been received.
@@ -58,7 +63,9 @@ sendbird.events.onMessageDelivery = function(obj) {
  * **onTypeStartReceived**: The function is called when a typing start message has been received.
  * **onTypeEndReceived**: The function is called when a typing end message has been received.
  * **onReadReceived**: The function is called when signal that other user read message in messaging channel has been received.
- * **onMessageDelivery**: The function is called when a message has been sent.
+ * **onMessageDelivery**: The function is called when a message has been sent.  
+ * **onBanReceived**: The function is called when a ban message has been received.  
+
 
 
 #### Event object
