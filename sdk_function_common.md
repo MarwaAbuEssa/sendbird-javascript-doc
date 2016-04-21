@@ -9,7 +9,7 @@ All of the functions are included in `SendBird JavaScript SDK`. No additional in
 ### 1. Join Channel / Connect to Channel
 Make a connection to a channel.
 
-After Wed SDK 2.1 version, all of connect/join functions are asynchronous now.
+After Web SDK 2.1 version, all of connect/join functions are asynchronous now.
 
 For Open Chat, please check out this link.
 
@@ -137,13 +137,16 @@ You can use `sendFile` to send a file to the `SendBird` server and call `sendFil
       "errorFunc": function(status, error) {
         console.log(status, error);
         // do something
-      } 
+      } ,
+      "async": true
     }
   );
   ...
 ```
-  * **file**: File DOM object to be transferred
-    - `e.g.) $('#file_input_field')[0].files[0]`
+  * **file**: File DOM object to be transferred  
+    - `e.g.) $('#file_input_field')[0].files[0]`  
+  * **async**: If you want to send asynchronous, set this value to true. `default: false`   
+     
 
 #### Response
 Response is a url of the uploaded file
