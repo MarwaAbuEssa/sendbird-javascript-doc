@@ -59,7 +59,7 @@ or
 ### Add the SDK File to Your Project
 After downloading the `SendBird JavaScript SDK` JavaScript file, add it to your Project Classpath (`generally the libs directory`). 
 
-Then include the JaveScript file on your page:
+Then include the JavaScript file on your page:
 ```javascript
 <script src="lib/SendBird.min.js"></script>
 ```

@@ -19,7 +19,7 @@ sendbird.init({
     "image_url": '',
     "access_token": '',
     "successFunc": function(data) {
-      // Login succeede.
+      // Login succeeded.
     },
     "errorFunc": function(status, error) {
       console.log(status, error);
@@ -45,7 +45,7 @@ sendbird.init({
     "image_url": '',
     "access_token": access_token,
     "successFunc": function(data) {
-      // Login succeede.
+      // Login succeeded.
     },
     "errorFunc": function(status, error) {
       console.log(status, error);
