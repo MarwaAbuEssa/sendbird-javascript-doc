@@ -53,6 +53,10 @@ sendbird.events.onBanReceived = function(obj) {
   // do something...
 };
 
+sendbird.events.onReconnectFailed = function() {
+  // do something...
+}
+
 ```
 
  * **onMessageReceived**: The function is called when a generic message has been received.
@@ -65,6 +69,7 @@ sendbird.events.onBanReceived = function(obj) {
  * **onReadReceived**: The function is called when signal that other user read message in messaging channel has been received.
  * **onMessageDelivery**: The function is called when a message has been sent.  
  * **onBanReceived**: The function is called when a ban message has been received.  
+ * **onReconnectFailed**: The function is called when reconnect is failed.  
 
 
 
