@@ -425,7 +425,7 @@ Check current SDK version.
 ```
 
 
-### 15. Register Token
+### 15. Register / Unregister Token
 Register GCM token and APNS token.
 
 ```javascript
@@ -437,6 +437,20 @@ Register GCM token and APNS token.
 ```javascript
   ...
   sendbird.registerAPNSToken(token);
+  ...
+```
+
+Unregister GCM token and APNS token.
+
+```javascript
+  ...
+  sendbird.unregisterGCMToken(token);
+  ...
+```
+
+```javascript
+  ...
+  sendbird.unregisterAPNSToken(token);
   ...
 ```
 
