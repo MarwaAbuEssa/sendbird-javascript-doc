@@ -172,6 +172,7 @@ or
 
 ### 5. Get Message
 Get messages from the current channel.
+You can call this method recursively to get all the messages in the channel.
 
 ```javascript
   ...
@@ -189,7 +190,7 @@ Get messages from the current channel.
   ...
 ```
 
- * **limit**: Number of messages to be displayed per page. `default: 20`  
+ * **limit**: Number of messages to be displayed per page. `default: 20`, `max: 200`  
 
 
 ### 6. Get Channel Member List
