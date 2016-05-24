@@ -66,8 +66,31 @@ Then include the JavaScript file on your page:
 
 
 ## Browser Compatibility
-We recommend the lastest version of Chrome/Safari/Firefox/IE 10+ ( If you use older IE, please upgrade it to IE10.)
+We recommend the lastest version of Chrome/Safari/Firefox/IE 10+ (If you use older IE, please upgrade it to IE10.)
 
+
+### Guide using SendBird SDK for older IE  
+If you have to use older IE version, we provide another way using flash websocket.  
+We recommend to use [web-socket-js](https://github.com/gimite/web-socket-js) that supports IE8.  
+
+1. Copy swfobject.js, web_socket.js, WebSocketMain.swf to your application directory.
+2. Write JavaScript code  
+
+```javascript
+  ...
+  <!-- Import JavaScript Libraries. -->
+  <script type="text/javascript" src="swfobject.js"></script>
+  <script type="text/javascript" src="web_socket.js"></script>
+  
+  <script type="text/javascript">
+    // Let the library know where WebSocketMain.swf is:
+    WEB_SOCKET_SWF_LOCATION = "WebSocketMain.swf";
+  </script>
+  
+  <!-- Import SendBird Libraries. -->
+  <script src="SendBird.min.js"></script>
+  ...
+```
 
 
 
