@@ -172,7 +172,7 @@ or
 
 ### 5. Get Message
 Get messages from the current channel.
-You can call this method recursively to get all the messages in the channel.
+You can call this method recursively to get more previous messages in the channel.
 
 ```javascript
   ...
