@@ -71,7 +71,7 @@ We recommend the lastest version of Chrome/Safari/Firefox/IE 10+ (If you use old
 
 ### Guide using SendBird SDK for older IE  
 If you have to use older IE version, we provide another way using flash websocket.  
-We recommend to use [web-socket-js](https://github.com/gimite/web-socket-js) that supports IE8.  
+We recommend to use [web-socket-js](https://github.com/gimite/web-socket-js) that supports IE8 and IE9.  
 
 1. Copy swfobject.js, web_socket.js, WebSocketMain.swf to your application directory.
 2. Write JavaScript code  
