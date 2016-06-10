@@ -470,7 +470,7 @@ Return a boolean.
 
 ```javascript
   ...
-  sendbird.getMessagingChannelList({
+  sendbird.getMessagingChannelListPagination({
     "successFunc": function(data) {
       ...
       var isMessaging = sendbird.isMessagingChannel(channel["channel_type"])
@@ -486,7 +486,7 @@ Return a boolean.
 
 ```javascript
   ...
-  sendbird.getMessagingChannelList({
+  sendbird.getMessagingChannelListPagination({
     "successFunc": function(data) {
       ...
       var isGroup = sendbird.isGroupMessagingChannel(channel["channel_type"])
@@ -504,7 +504,7 @@ Recommend to use `isGroupMessagingChannel()`.
 
 ```javascript
   ...
-  sendbird.getMessagingChannelList({
+  sendbird.getMessagingChannelListPagination({
     "successFunc": function(data) {
       ...
       var isGroup = sendbird.isGroupMessaging(channel["channel_type"])
