@@ -229,17 +229,16 @@ The user is removed from the channel's member list and the channel no longer sho
 ```
 
  * **other fields**: Internal use only or deprecated 
- 
 
 ### 4. Get Messaging Channel List
-Get a list of 1-on-1/group messaging channels.
-
+#### 4-1. Get Messaging Channel List with pagination.
+Get a list of 1-on-1/group messaging channels with pagination.
 
 ```javascript
   ...
   var page = 1;
   var limit = 20;
-  sendbird.getMessagingChannelList({
+  sendbird.getMessagingChannelListPagination({
     "page": page,
     "limit": limit,
     "successFunc" : function(data) {
@@ -255,7 +254,69 @@ Get a list of 1-on-1/group messaging channels.
 ```
 
  * **page**: Page number. `default : 1`  
- * **limit**: Number of channels to be displayed per page. `default : 9999`  
+ * **limit**: Number of channels to be displayed per page. `default : 15`  
+
+#### Response
+ 
+```json
+  {
+    "channels": [
+      0: {
+        "channel": {
+          "channel_url": string,     // channel url string
+          "member_count": int,       // count of members who are joined channel
+          "name": string             // channel topic
+        },
+        "last_message": object,      // last message object in channel
+        "members": [
+          0: {
+            "guest_id": string,      // user unique id
+            "image": string,         // user profile image url
+            "name": string           // user nickname
+          },
+          1: {
+            ...
+          },
+          ...
+          ],
+          "read_status": {
+            0: int,                    // timestamp
+            1: int,                    // timestamp
+            ...
+          },
+          "unread_message_count": int  // unread message count
+      },
+      1: {
+        ...
+      } ,
+      ...
+    ],
+    "next": int // next page number. if this value is 0, next page are not exist.
+    "page": int // current page number
+  }
+```
+ * **other fields**: Internal use only or deprecated 
+
+#### 4-2. Get Messaging Channel List `(Deprecated)`
+This function will be removed.  
+Recommend to use `getMessagingChannelListPagination()`. 
+
+Get a list of 1-on-1/group messaging channels.
+
+```javascript
+  ...
+  sendbird.getMessagingChannelList({
+    "successFunc" : function(data) {
+      console.log(data);
+      // do something
+    },
+    "errorFunc": function(status, error) {
+      console.log(status, error);
+      // do something
+    } 
+  });
+  ...
+```
 
 #### Response
  
@@ -293,8 +354,6 @@ Get a list of 1-on-1/group messaging channels.
       } ,
       ...
     ],
-    "next": int // next page number. if this value is 0, next page are not exist.
-    "page": int // current page number
   }
 ```
 
@@ -439,7 +498,7 @@ Return a boolean.
   ...
 ```    
   
-#### 9-3. Check Group Messaging Channel: Deprecated  
+#### 9-3. Check Group Messaging Channel `(Deprecated)`
 This function will be removed.  
 Recommend to use `isGroupMessagingChannel()`. 
 
