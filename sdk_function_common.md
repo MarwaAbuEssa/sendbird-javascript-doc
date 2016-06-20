@@ -426,7 +426,7 @@ Check current SDK version.
 ```
 
 
-### 15. Register / Unregister Token
+### 16. Register / Unregister Token
 Register GCM token and APNS token.
 
 ```javascript
